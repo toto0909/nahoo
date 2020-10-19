@@ -26,7 +26,7 @@
             <div class="d-none d-md-block col-md-1"><img src="img/battle.png" class="img-fluid"><p class="font-weight-light text-primary">バトル</p></div>
             <div class="d-none d-md-block col-md-1"><img src="img/club.jpg" class="img-fluid"><p class="font-weight-light text-primary">クラブ</p></div>
             <div class="d-none d-md-block col-md-1"><a href="nahoo.sakura.ne.jp/wiki/"><img src="img/wiki.png" class="img-fluid"></a><p class="font-weight-light text-primary">wiki</p></div>
-            <div class="col-sm-6"><a href="https://www.yahoo.co.jp"><img src="img/nahoo.png" class="img-fluid"></a><div class="text-info font-weight-bold"><span id="view_today"></span></div></div>
+            <div class="col-sm-6"><a href="https://www.yahoo.co.jp"><img src="img/nahoo.png" class="img-fluid"></a><div class="text-info font-weight-bold"><span id="view_clock"></span></div></div>
             <div class="d-none d-md-block col-md-1"><img src="img/money.png" class="img-fluid"><p class="font-weight-light text-primary">金融</p></div>
             <div class="d-none d-md-block col-md-1"><img src="img/game.jpg" class="img-fluid"><p class="font-weight-light text-primary">ゲーム</p></div>
             <div class="d-none d-md-block col-md-1"><img src="img/shopping.png" class="img-fluid"><p class="font-weight-light text-primary">買い物</p></div>
@@ -82,13 +82,28 @@
                   <div class="container w-100 py-3">
                     <img src="img/yahoo_ad.png" width=100% height=100%>
                   </div>
-                  
                 </div>
+
+                <!--余白用-->
+                <div class="w-100 bg-white">
+                  <div><br></div>
+                </div>
+
               </div>
               <div class="col-sm-4">
-                <div class="w-100 h-50 cover border border-primary">トップニュース</div>
-                <div class="w-100 h-50 cover border border-primary">ニュース</div>
-               </div>
+                <!--トップニュース-->
+                <div class="w-100 h-50 cover border border-primary">トップニュース
+                </div>
+
+              <!--余白用-->
+              <div class="w-100 bg-white">
+                <div><br></div>
+              </div>
+
+              <!--ニュース-->
+                <div class="w-100 h-50 cover border border-primary">ニュース
+                </div>
+              </div>
                <div class="col-sm-4">
                 <div class="w-100 h-30 cover border border-primary">天気</div>
                 <div class="w-100 h-30 cover border border-primary">為替</div>
@@ -107,21 +122,26 @@
 
     <!--日付取得関数-->
     <script type="text/javascript">
-      document.getElementById("view_today").innerHTML = getToday();
+      timerID = setInterval('clock()',500); //0.5秒毎にclock()を実行
       
-      function getToday() {
+      function clock() {
+        document.getElementById("view_clock").innerHTML = getNow();
+      }
+      
+      function getNow() {
         var now = new Date();
         var year = now.getFullYear();
         var mon = now.getMonth()+1; //１を足すこと
         var day = now.getDate();
-        var you = now.getDay(); //曜日(0～6=日～土)
         var hour = now.getHours();
-	      var min = now.getMinutes();
-      
-        //曜日の選択肢
+        var min = now.getMinutes();
+        var sec = now.getSeconds();
+        var you = now.getDay(); //曜日(0～6=日～土)
+
         var youbi = new Array("日","月","火","水","木","金","土");
+      
         //出力用
-        var s = year + "年" + mon + "月" + day + "日 (" + youbi[you] + ") " + hour + "時" + min + "分";
+        var s = year + "年" + mon + "月" + day + "日(" + youbi[you] + ")" + hour + "時" + min + "分" + sec + "秒"; 
         return s;
       }
       </script>
