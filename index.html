@@ -7,12 +7,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Nahoo!</title>
+    <!--水色の背景色を画像で指定-->
+    <style>
+      .cover{
+        background: url(img/back_image.png);
+        background-size: cover;
+      }
+    </style>
   </head>
 
   <body>
 
     <main>
-      <section class="text-center bg-white py-5">
+      <!--トップメニューアイコン6 + Nahoo!ロゴ + 時刻取得-->
+      <section class="text-center bg-white mt-5">
         <div class="container">
           <div class="row">
             <div class="col-sm-1"><img src="img/battle.png" class="img-fluid"></div>
@@ -32,6 +40,25 @@
             <div class="col-sm-1 text-primary"><p class="font-weight-light">ゲーム</p></div>
             <div class="col-sm-1 text-primary"><p class="font-weight-light">買い物</p></div>
           </div>
+        </div>
+      </section>
+
+      <!--検索窓-->
+      <section class="text-center mt-0">
+        <div class="cover container text-black text-center py-3 border border-primary">
+          <form method=get action="http://www.google.co.jp/search" target="_blank" style="margin: 0px;">
+                <font size=-1>
+                  <input type=hidden name=domains value="nahoo.sakura.ne.jp">
+                  <input type=radio name=sitesearch value="" checked> Google検索 <!--Google検索-->
+                  <input type=radio name=sitesearch value="Nahoo!"> Nahoo!検索 <!--Nahoo!内検索方法未定-->
+                </font>
+                <br>
+                <input type=text name=q size=31 maxlength=255 value="">
+                <input type=hidden name=ie value=utf-8>
+                <input type=hidden name=oe value=utf-8>
+                <input type=hidden name=hl value="ja">
+                <input type=submit name=btnG value="検索">   
+          </form>
         </div>
       </section>
 
