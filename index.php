@@ -106,7 +106,7 @@
               
                <!--天気(weather.php呼び出し)-->
                <div class="w-100 cover border border-primary">
-                <div class="container w-100 py-0">
+                <div class="container w-100 mt-3 py-0 bg-white">
                   <?php include('./weather.php'); ?>
                   <table class="table">
                     <thead>
@@ -120,27 +120,27 @@
                     <tbody>
                       <tr>
                         <th scope="row"><a href="https://openweathermap.org/city/1857519">松本市</a></th>
-                        <td><?php echo get_json("icon"); ?></td>
-                        <td><?php echo get_json("temp"); ?>℃</td>
-                        <td><?php echo get_json("humidity"); ?>%</td>
+                        <td><?php echo get_json("icon",1); ?></td>
+                        <td><?php echo get_json("temp",1); ?>℃</td>
+                        <td><?php echo get_json("humidity",1); ?>%</td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="https://openweathermap.org/city/1853226">新座市</a></th>
-                        <td>no data</td>
-                        <td>no data</td>
-                        <td>no data</td>
+                        <td><?php echo get_json("icon",2); ?></td>
+                        <td><?php echo get_json("temp",2); ?>℃</td>
+                        <td><?php echo get_json("humidity",2); ?>%</td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="https://openweathermap.org/city/1850144">豊島区</a></th>
-                        <td>no data</td>
-                        <td>no data</td>
-                        <td>no data</td>
+                        <td><?php echo get_json("icon",3); ?></td>
+                        <td><?php echo get_json("temp",3); ?>℃</td>
+                        <td><?php echo get_json("humidity",3); ?>%</td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="https://openweathermap.org/city/1863431">秦野市</a></th>
-                        <td>no data</td>
-                        <td>no data</td>
-                        <td>no data</td>
+                        <td><?php echo get_json("icon",4); ?></td>
+                        <td><?php echo get_json("temp",4); ?>℃</td>
+                        <td><?php echo get_json("humidity",4); ?>%</td>
                       </tr>
                     </tbody>
                   </table>
