@@ -26,8 +26,8 @@
             <div class="d-none d-md-block col-md-1"><img src="img/battle.png" class="img-fluid"><p class="font-weight-light text-primary">バトル</p></div>
             <div class="d-none d-md-block col-md-1"><img src="img/club.jpg" class="img-fluid"><p class="font-weight-light text-primary">クラブ</p></div>
             <div class="d-none d-md-block col-md-1"><a href="contents/wiki/wiki.html"><img src="img/wiki.png" class="img-fluid"></a><p class="font-weight-light text-primary">wiki</p></div>
-            <div class="col-sm-6"><a href="https://www.yahoo.co.jp"><img src="img/nahoo.png" class="img-fluid"></a><div class="text-info font-weight-bold"><span id="view_clock"></span></div></div>
-            <div class="d-none d-md-block col-md-1"><img src="img/money.png" class="img-fluid"><p class="font-weight-light text-primary">金融</p></div>
+            <div class="col-sm-6"><a href="index.html"><img src="img/nahoo.png" class="img-fluid"></a><div class="text-info font-weight-bold"><span id="view_clock"></span></div></div>
+            <div class="d-none d-md-block col-md-1"><a href="contents/finance/finance.html"><img src="img/money.png" class="img-fluid"></a><p class="font-weight-light text-primary">金融</p></div>
             <div class="d-none d-md-block col-md-1"><img src="img/game.jpg" class="img-fluid"><p class="font-weight-light text-primary">ゲーム</p></div>
             <div class="d-none d-md-block col-md-1"><img src="img/shopping.png" class="img-fluid"><p class="font-weight-light text-primary">買い物</p></div>
           </div>
@@ -64,7 +64,7 @@
                       <a href="#" class="list-group-item list-group-item-action">バトル(Battle)</a>
                       <a href="#" class="list-group-item list-group-item-action">クラブリーグ(Culb)</a>
                       <a href="contents/wiki/wiki.html" class="list-group-item list-group-item-action">Wikipedia(Wiki)</a>
-                      <a href="#" class="list-group-item list-group-item-action">ファイナンス(Finance)</a>
+                      <a href="contents/finance/finance.html" class="list-group-item list-group-item-action">ファイナンス(Finance)</a>
                       <a href="#" class="list-group-item list-group-item-action">ゲーム(Game)</a>
                       <a href="#" class="list-group-item list-group-item-action">ショッピング(Shopping)</a>
                       <a href="#" class="list-group-item list-group-item-action">Nahoo!掲示板(Bulletin Board)</a>
@@ -95,9 +95,37 @@
 
               <div class="col-sm-4 order-1 order-sm-2"> <!--中央カラム-->
                 <!--トップニュース-->
-                <div class="w-100 cover border border-primary">
-                  <div class="container w-100 py-3">
-                    <h2>トップニュース</h2>
+                <!--新着記事サムネ3つ DBから持ってくる-->
+                <div class="w-100 cover  text-center">
+                  <div class="container w-100  border border-primary">
+                    <h5>Top News</h5>
+                    <div class="row">
+                      <div class="container bg-white mb-2">
+                        <div class="media">
+                          <img class="mr-3 mt-1 mb-1" src="img/no_img.png" alt="64x64 image">
+                          <div class="media-body">                           
+                            Thank You. I am honored to be with you today for your commencement from one of the finest
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="container bg-white mb-2">
+                        <div class="media">
+                          <img class="mr-3 mt-1 mb-1" src="img/no_img.png" alt="64x64 image">
+                          <div class="media-body">
+                            Thank You. I am honored to be with you today for your commencement from one of the finest  
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="container bg-white mb-2">
+                        <div class="media">
+                          <img class="mr-3 mt-1 mb-1" src="img/no_img.png" alt="64x64 image">
+                          <div class="media-body">
+                            Thank You. I am honored to be with you today for your commencement from one of the finest  
+                          </div>
+                        </div>
+                      </div>
                   </div>
                 </div>
 
@@ -108,7 +136,8 @@
               
                <!--天気(weather.php呼び出し)-->
                <div class="w-100 cover border border-primary">
-                <div class="container w-100 mt-3 py-0 bg-white">
+                <h5>天気</h5>
+                <div class="container w-100 mt-1 py-0 bg-white">
                   <?php include('./weather.php'); ?>
                   <table class="table">
                     <thead>
@@ -148,10 +177,7 @@
                   </table>
                   </div>
                 </div>
-
-                
-               
-
+              </div>
               </div>
 
                <div class="col-sm-4 order-3 order-sm-3"> <!--右カラム-->
