@@ -26,7 +26,7 @@
             <div class="d-none d-md-block col-md-1"><img src="img/battle.png" class="img-fluid"><p class="font-weight-light text-primary">バトル</p></div>
             <div class="d-none d-md-block col-md-1"><img src="img/club.jpg" class="img-fluid"><p class="font-weight-light text-primary">クラブ</p></div>
             <div class="d-none d-md-block col-md-1"><a href="contents/wiki/wiki.html"><img src="img/wiki.png" class="img-fluid"></a><p class="font-weight-light text-primary">wiki</p></div>
-            <div class="col-sm-6"><a href="index.html"><img src="img/nahoo.png" class="img-fluid"></a><div class="text-info font-weight-bold"><span id="view_clock"></span></div></div>
+            <div class="col-sm-6"><a href="index.php"><img src="img/nahoo.png" class="img-fluid"></a><div class="text-info font-weight-bold"><span id="view_clock"></span></div></div>
             <div class="d-none d-md-block col-md-1"><a href="contents/finance/finance.html"><img src="img/money.png" class="img-fluid"></a><p class="font-weight-light text-primary">金融</p></div>
             <div class="d-none d-md-block col-md-1"><img src="img/game.jpg" class="img-fluid"><p class="font-weight-light text-primary">ゲーム</p></div>
             <div class="d-none d-md-block col-md-1"><img src="img/shopping.png" class="img-fluid"><p class="font-weight-light text-primary">買い物</p></div>
@@ -98,13 +98,13 @@
                 <!--新着記事サムネ3つ DBから持ってくる-->
                 <div class="w-100 cover  text-center">
                   <div class="container w-100  border border-primary">
-                    <h5>Top News</h5>
+                    <h5>トップニュース</h5>
                     <div class="row">
                       <div class="container bg-white mb-2">
                         <div class="media">
                           <img class="mr-3 mt-1 mb-1" src="img/no_img.png" alt="64x64 image">
                           <div class="media-body">                           
-                            Thank You. I am honored to be with you today for your commencement from one of the finest
+                            This is sample article. After develope this, new article will be setted  here. Thank you.
                           </div>
                         </div>
                       </div>
@@ -113,7 +113,7 @@
                         <div class="media">
                           <img class="mr-3 mt-1 mb-1" src="img/no_img.png" alt="64x64 image">
                           <div class="media-body">
-                            Thank You. I am honored to be with you today for your commencement from one of the finest  
+                          This is sample article. After develope this, new article will be setted  here. Thank you.  
                           </div>
                         </div>
                       </div>
@@ -122,7 +122,7 @@
                         <div class="media">
                           <img class="mr-3 mt-1 mb-1" src="img/no_img.png" alt="64x64 image">
                           <div class="media-body">
-                            Thank You. I am honored to be with you today for your commencement from one of the finest  
+                          This is sample article. After develope this, new article will be setted  here. Thank you.
                           </div>
                         </div>
                       </div>
