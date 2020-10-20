@@ -56,7 +56,7 @@
       <section class="text-center mt-3">
         <div class="container text-center">
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-sm-4 order-2 order-sm-1"> <!--左カラム-->
                 <!--アプリケーション一覧-->
                 <div class="w-100 cover border border-primary">
                   <div class="container w-100 py-3">
@@ -90,22 +90,70 @@
                 </div>
 
               </div>
-              <div class="col-sm-4">
+
+              <div class="col-sm-4 order-1 order-sm-2"> <!--中央カラム-->
                 <!--トップニュース-->
-                <div class="w-100 h-50 cover border border-primary">トップニュース
+                <div class="w-100 cover border border-primary">
+                  <div class="container w-100 py-3">
+                    <h2>トップニュース</h2>
+                  </div>
                 </div>
 
-              <!--余白用-->
-              <div class="w-100 bg-white">
-                <div><br></div>
+                <!--余白用-->
+                <div class="w-100 bg-white">
+                  <div><br></div>
+                </div>
+              
+               <!--天気(weather.php呼び出し)-->
+               <div class="w-100 cover border border-primary">
+                <div class="container w-100 py-0">
+                  <?php include('./weather.php'); ?>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">天気</th>
+                        <th scope="col">気温</th>
+                        <th scope="col">湿度</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="https://openweathermap.org/city/1857519">松本市</a></th>
+                        <td><?php echo get_json("icon"); ?></td>
+                        <td><?php echo get_json("temp"); ?>℃</td>
+                        <td><?php echo get_json("humidity"); ?>%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="https://openweathermap.org/city/1853226">新座市</a></th>
+                        <td>no data</td>
+                        <td>no data</td>
+                        <td>no data</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="https://openweathermap.org/city/1850144">豊島区</a></th>
+                        <td>no data</td>
+                        <td>no data</td>
+                        <td>no data</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="https://openweathermap.org/city/1863431">秦野市</a></th>
+                        <td>no data</td>
+                        <td>no data</td>
+                        <td>no data</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                </div>
+
+                
+               
+
               </div>
 
-              <!--ニュース-->
-                <div class="w-100 h-50 cover border border-primary">ニュース
-                </div>
-              </div>
-               <div class="col-sm-4">
-                <div class="w-100 h-30 cover border border-primary">天気</div>
+               <div class="col-sm-4 order-3 order-sm-3"> <!--右カラム-->
+
                 <div class="w-100 h-30 cover border border-primary">為替</div>
                 <div class="w-100 h-40 cover border border-primary">ショッピング</div>
                </div>
@@ -115,8 +163,9 @@
       </section>
 
     </main>
+
     <footer class="text-center text-muted py-4">
-      ©︎Nahoo!
+      <a href="http://nahoo.sakura.ne.jp"><p>©︎Nahoo!</p></a>
     </footer>
 
 
