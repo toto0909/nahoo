@@ -69,6 +69,7 @@
                       <a href="#" class="list-group-item list-group-item-action">ショッピング(Shopping)</a>
                       <a href="#" class="list-group-item list-group-item-action">Nahoo!掲示板(Bulletin Board)</a>
                       <a href="#" class="list-group-item list-group-item-action">Nahoo!占い(Divination)</a>
+                      <a href="contents/develope/develope_index.html" class="list-group-item list-group-item-action">開発(develope)</a>
                       <a href="#" class="list-group-item list-group-item-action">その他(Others)</a>
                     </div>
                   </div>
